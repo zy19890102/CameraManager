@@ -1633,7 +1633,7 @@ open class CameraManager: NSObject, AVCaptureFileOutputRecordingDelegate, UIGest
     fileprivate func _setupPreviewLayer() {
         if let validCaptureSession = captureSession {
             previewLayer = AVCaptureVideoPreviewLayer(session: validCaptureSession)
-            previewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
+            previewLayer?.videoGravity = AVLayerVideoGravity.resizeAspect
         }
     }
     
